@@ -43,7 +43,7 @@
         }
 
         public function modificarAlumnos($nc, $n, $pa, $sa, $e, $s, $c) {
-            $sql = "UPDATE Alumnos SET Num_Control='$nc', Nombre='$n', Primer_Ap='$pa', Segundo_Ap='$sa', Edad=$e, Semestre=$s, Carrera='$c') WHERE Num_Control='$nc'";
+            $sql = "UPDATE Alumnos SET Num_Control='$nc', Nombre='$n', Primer_Ap='$pa', Segundo_Ap='$sa', Edad=$e, Semestre=$s, Carrera='$c' WHERE Num_Control='$nc';";
             
             if(mysqli_query($this->conexion->getConexion(), $sql) ) {
                 echo "<script> alert('Modificado con Exito'); </script>";

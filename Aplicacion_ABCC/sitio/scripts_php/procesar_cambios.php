@@ -9,7 +9,7 @@
     $pa = $_POST['caja_primer_ap'];
     $sa = $_POST['caja_segundo_ap'];
     $e = $_POST['caja_edad'];
-    $s = 5;//$_POST['caja_semestre'];
+    $s = $_POST['caja_semestre'];
     $c = $_POST['caja_carrera'];
 
     $aDAO = new AlumnoDAO();
