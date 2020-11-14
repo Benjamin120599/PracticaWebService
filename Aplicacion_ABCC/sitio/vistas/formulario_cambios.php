@@ -2,7 +2,7 @@
     
     session_start();
     if($_SESSION['autenticado'] == false) {
-        header("location:login.php");
+        header("location:index.php");
     } 
 
 ?>
@@ -23,7 +23,7 @@
 
     <body>
         <?php
-            require_once('index.html');
+            require_once('index2.html');
         ?>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">

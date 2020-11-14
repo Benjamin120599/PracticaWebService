@@ -2,7 +2,7 @@
     
     session_start();
     if($_SESSION['autenticado'] == false) {
-        header("location:login.php");
+        header("location:index.php");
     } 
 
 ?>
@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta charset='utf-8'>
-        <title>ALTA ALUMNOS</title>
+        <title>ALTAS ALUMNOS</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
         <script src='main.js'></script>
@@ -23,7 +23,7 @@
 
     <body>
         <?php
-            require_once('index.html');
+            require_once('index2.html');
         ?>
 
         <form method="POST" action="../scripts_php/procesar_altas.php">

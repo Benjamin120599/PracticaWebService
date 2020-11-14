@@ -2,7 +2,7 @@
 
     session_start();
     if($_SESSION['autenticado'] == false) {
-        header("location:login.php");
+        header("location:index.php");
     } 
 
 ?>
@@ -26,7 +26,7 @@
 
     <body>
         <?php
-            require_once('index.html');
+            require_once('index2.html');
         ?>
         
         <table id="customers">

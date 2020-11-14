@@ -15,7 +15,7 @@
     <body style="margin: 0; padding: 0; background-color: #17a2b8; height: 100vh;">
 
         <?php
-            require_once('index.html');
+            require_once('index2.html');
         ?>
 
         <div id="login">
