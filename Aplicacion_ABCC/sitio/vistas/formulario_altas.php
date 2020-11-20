@@ -30,11 +30,13 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Numero Control</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Número de control" name="caja_num_control">
+                    <span style="color: red;"> <?php echo isset($_SESSION['errorNumControl'])?$_SESSION['errorNumControl'] :"";?></span>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Número de control" name="caja_num_control" value="<?php echo isset($_SESSION['datoNumControl'])?$_SESSION['datoNumControl'] :"";?>">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Nombre</label>
-                    <input type="text" class="form-control" id="inputPassword4" placeholder="Solo letras" name="caja_nombre">
+                    <span style="color: red;"> <?php echo isset($_SESSION['errorNombre'])?$_SESSION['errorNombre'] :"";?></span>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Solo letras" name="caja_nombre" value="<?php echo isset($_SESSION['datoNombre'])?$_SESSION['datoNombre'] :"";?>">
                 </div>
             </div>
             <div class="form-group">
@@ -76,3 +78,11 @@
     </body>
 
 </html>
+
+<?php
+    unset($_SESSION['errorNumControl']);
+    unset($_SESSION['datoNumControl']);
+
+    unset($_SESSION['errorNombre']);
+    unset($_SESSION['datoNombre']);
+?>
