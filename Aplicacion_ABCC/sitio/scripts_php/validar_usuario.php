@@ -24,7 +24,7 @@
             $_SESSION['usuario'] = $u;
             header("location:../vistas/formulario_altas.php"); 
         } else {
-            header("location:../vistas/login.php");
+            header("location:../vistas/index.php");
         }
 
     }
